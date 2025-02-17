@@ -15,7 +15,7 @@ URL = os.getenv("VERCEL_URL", "")
 if URL:
     URL = f"https://{URL}"
 else:
-    URL = os.getenv("CUSTOM_URL", "https://your-app-url.vercel.app/")
+    URL = os.getenv("CUSTOM_URL", "https://your-app-url.vercel.app")
 
 bot = Bot(TOKEN)
 app = Flask(__name__)
